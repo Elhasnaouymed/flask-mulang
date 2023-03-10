@@ -3,8 +3,8 @@ import os
 
 here = os.path.abspath(os.path.dirname(__file__))
 
-VERSION = '0.0.1'
-DESCRIPTION = 'Flask Extinction to for multi languages.'
+VERSION = '0.0.2'
+DESCRIPTION = 'Flask Extension to for multi languages.'
 
 # Setting up
 setup(

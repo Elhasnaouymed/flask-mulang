@@ -1,4 +1,3 @@
-
 import os
 from datetime import datetime, tzinfo
 from configparser import ConfigParser
@@ -165,6 +164,10 @@ class MultiLanger:
             # > loop all self._langs, and for each, do get $self.LANG_FULL_NAME from $DEFAULT_SECTION group,
             # > if $self.LANG_FULL_NAME doesn't exist for current lang, return empty dict, so you will get None from it eventually.
             return [(lng, self._groups[self.DEFAULT_SECTION].get(self.LANG_FULL_NAME, {}).get(lng)) for lng in self._langs]
+
+    @property
+    def langs_count(self):
+        return len(self._langs)
 
     def datetime_now_formatted(self, tz: tzinfo = None):
         """
