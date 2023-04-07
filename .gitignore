@@ -1,6 +1,0 @@
-build/
-dist/
-flask_mulang.egg-info/
-venv/
-.idea/
-__pycache__/
